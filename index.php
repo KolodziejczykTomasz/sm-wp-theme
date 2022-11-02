@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<?php 
+$logo_id = get_theme_mod( 'custom_logo' );
+echo wp_get_attachment_image( $logo_id , 'full' );?>
 <body>
     <header>
         <nav class="navbar fixed-top  navbar-expand-lg">
