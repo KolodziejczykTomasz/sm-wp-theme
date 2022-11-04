@@ -128,20 +128,13 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
                         Kartka z kalendarza
                     </div>
                     <div class="about-content-right-wrapperCurrentDate">
-                        <div class="about-content-right-subtitle">Dziś jest:</div>
-                        <p>
-                            {Weekday} {Day} {MonthLong} {Year}r.
-
-                        </p>
+                        <div class="about-content-right-subtitle">Dziś jest: </div>
+                        <div id="date" class="about-content-right-subtitle"></div>                
                     </div>
                     <div class="about-content-right-wrapperNameDay">
                         <ul>
                             <div class="about-content-right-subtitle">Imieniny:</div>
-                            {namesData
-                            .filter(({ day }) => currentDate === day)
-                            .map(({ day, nameDay }) => (
-                            <li key={day}>{nameDay}</li>
-                            ))}
+                         <div id="nameDay" class="about-content-right-subtitle"></div>
                         </ul>
                     </div>
                     <div class="about-content-right-wrapperWeather">
@@ -363,4 +356,5 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             </div>
         </section>
     </main>
+     <script src="<?php echo get_stylesheet_directory_uri(); ?>./js/script.js" type="text/javascript"></script>
     <?php get_footer(); ?>

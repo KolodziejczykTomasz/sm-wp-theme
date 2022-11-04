@@ -23,7 +23,15 @@
             <div class="footer-wrapperContactRight">
                 <div class="footer-title">Jak dojechać</div>
                 <div class="footer-contentMap">
-                    Mapa
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2337.9793568928258!2d20.566490415746745!3d54.12729328015008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e2f5a4f46959b3%3A0x32bba86389a5e89b!2sWarmia.%20Sp%C3%B3%C5%82dzielnia%20Mieszkaniowa!5e0!3m2!1spl!2spl!4v1617206414119!5m2!1spl!2spl"
+                        width="90%"
+                        height="300"
+                        loading="lazy"
+                        title="Poniatowskiego 18"
+                        style={{ border: 0 }}
+                        aria-hidden="false"
+                    ></iframe>
                 </div>
             </div>
         </div>
