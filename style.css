@@ -230,9 +230,19 @@ body {
     font-size: 14px;
     width: 100%;    
     box-shadow: 0 5px 15px -10px rgba(0, 0, 0, 0.3);
-    padding-bottom: 30px;
+    padding-bottom: 30px;    
     height: 100%;
 }
+.about-content-left-wrapper i {
+    padding-right: 7px;
+    color: #8fcb81;  
+    font-size: 14px;  
+}
+
+.about-content-second-row {
+    padding-top: 15px
+}
+
 .about-content-left-wrappercashdesk {
     display: block;
     font-size: 14px;
@@ -276,6 +286,7 @@ body {
 .about-content-left-wrappertechnicalsupport {
     display: block;
     font-size: 14px;
+    padding-left: 20px;
 }
 
 .about-content-left-wrappertechnicalsupport p {
@@ -369,14 +380,6 @@ body {
     box-shadow: 2px 2px 20px grey;
 }
 
-.about-content-center-header{
-    color: black;
-    font-weight: 600;
-    text-align: center;
-    font-size:var(--fontSize-xxl);
-    text-transform: uppercase;
-}
-
 .about-content-center-account{
     display: flex;
     justify-content: center;
@@ -400,7 +403,7 @@ body {
     margin-bottom:40px;
     width: 100%;
     text-align:center;
-    font-size:var(--fontSize-l);
+    font-size:26px;
 }
 
 .about-content-center-header {
@@ -408,14 +411,14 @@ body {
     min-height: 120px;
     width: 100%;
     height: auto;
-    padding-right: 30px;
+    padding-right: 34px;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     text-align: center;
-    font-size:var(--fontSize-xxl);
+    font-size:42px;
     font-weight: 700;
-    font-kerning: normal;
+    font-kerning:auto;
 }
 
 @media (max-width: 960px) {
@@ -461,11 +464,11 @@ body {
     padding-left: 10px;
 }
 .about-content-right-wrapperCurrentDate p {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .about-content-right-wrapperNameDay li{
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 
@@ -476,8 +479,19 @@ body {
     padding-left: 10px;
 }
 
+#ResName, #nameDay, #date{
+    padding-left: 5px;    
+    color: #8fcb81;
+}
+
+#nameDay, #date{
+font-weight: 600;
+padding-left: 15px;
+}
+
 .about-content-right-wrapperWeather li {
       padding-left: 20px;
+      list-style-type: none;
   }
 
 .about-content-right-listItem{
@@ -815,6 +829,7 @@ footer {
 .footer-companyName {
     font-size:var(--fontSize-xl);
     font-weight: 600;
+    padding-left: 10px;
 }
   
 .footer-companyName p:nth-child(1) {
@@ -836,7 +851,7 @@ footer {
 }
 
 .footer-title {
-    font-size:var(--fontSize-xl);
+    font-size:28px;
     margin: 50px 10px;
     padding: 0 10px;
     width: 100%;
@@ -852,13 +867,43 @@ footer {
     display: flex;
 }
 
-.footer-footerLink {
+.footer-footerLink a{
     transition: 0.3s;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
-.footer-footerLink:hover {
-    text-decoration: underline;
+.footer-footerLink a:hover {
+    text-decoration: none;
+    color: #8fcb81;
 }
+
+.greyText {
+    font-size: small;
+}
+
+.linkFooter {
+    color: #767676;
+    text-decoration: none;
+}
+
+.linkFooter:hover {
+    color: #8fcb81;
+}
+
+.breakline-menu {
+    padding: 0 5px;
+}
+
+.footer-wrapperCopyrightCenter{
+    font-size: 14px;
+}
+
+
+
+
 
 .button-wrapper {
     margin: 30px 0;

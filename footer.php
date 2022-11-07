@@ -1,3 +1,4 @@
+ 
 <footer>
     <div class="footer-wrapper">
         <div class="footer-wrapperContact">
@@ -29,7 +30,7 @@
                         height="300"
                         loading="lazy"
                         title="Poniatowskiego 18"
-                        style={{ border: 0 }}
+                        style="border: 0"
                         aria-hidden="false"
                     ></iframe>
                 </div>
@@ -38,20 +39,35 @@
         <div class="footer-wrapperCopyright">
             <div class="footer-wrapperCopyrightLeft">
                 <div class="footer-footerLink--Wrapper">
-                    <p class="footer-footerLink"> Polityka prywatności </p>
-                    <p> | </p>
-                    <p class="footer-footerLink"> Ochrona danych osobowych</p>
+                    <p class="footer-footerLink"> 
+                        <a href="#"
+                            target="_blank"
+                            rel="noopener noreferrer">Polityka prywatności</a></p>
+                            <p class="breakline-menu">|</p>
+                            <p class="footer-footerLink"> 
+                        <a href="#"       
+                            target="_blank"
+                            rel="noopener noreferrer">Ochrona danych osobowych</a></p>
                 </div>
             </div>
             <div class="footer-wrapperCopyrightCenter">
-                Copyright &copy;2022 - SM Warmia
+                Copyright &copy;<span id="year"></span> - SM "Warmia"
             </div>
             <div class="footer-wrapperCopyrightRight">
-                <div class="footer-wrapperCopyrightRightDate"> NETTOM24</div>
+                <div class="footer-wrapperCopyrightRightDate"> <p>
+        <span class="greyText">
+        <a href="https://nettom24.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkFooter"
+                > NETTOM24</a>
+        </span>
+        </p></div>
             </div>
         </div>
     </div>
 </footer>
    <?php wp_footer(); ?>
+
 </body>
 </html>

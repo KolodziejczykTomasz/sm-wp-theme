@@ -67,8 +67,13 @@ register_sidebar(
     )
 );
 
-
-
-
+//Footer copyright
+function add_this_script_footer() { 
+?>
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+<?php } 
+add_action('wp_footer', 'add_this_script_footer');
 ?>
 

@@ -39,13 +39,13 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
                     <div class="about-content-left-subtitle-green"> Kontakt </div>
                     <div class="about-content-left-wrappercashdesk">
                         <div class="about-content-left-subtitle">
-                            Sekretariat/Prezes Zarządu
+                            <i class="fa-solid fa-angle-right"></i>Sekretariat/Prezes Zarządu
                         </div>
-                        <p> 89 767 25 48 </p>
-                        <p>
+                        <p><i class="fa-solid fa-phone"></i> 89 767 25 48 </p>
+                        <p class="about-content-second-row"><i class="fa-solid fa-envelope"></i>
                             <a href="mailto:sekretariat@smwarmia.pl">sekretariat@smwarmia.pl</a>
                         </p>
-                        <p style="padding-right: 10px; padding-top: 15px">
+                        <p style="padding-right: 10px; padding-top: 30px">
                             <strong>
                                 <em>
                                     Prezes przyjmuje interesantów codziennie w godzinach 8:00 - 14:00
@@ -54,44 +54,47 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
                         </p>
                     </div>
                     <div class="about-content-left-wrappertechnicalsupport">
-                        <div class="about-content-left-subtitle" style=" margin-top: 30px"> Dział
+                        <div class="about-content-left-subtitle" style=" margin-top: 20px"> <i class="fa-solid fa-angle-right"></i>Dział
                             Techniczny
                         </div>
-                        <p> ul. Szwoleżerów 12 </p>
-                        <p> 89 767 21 32, 89 767 34 33 </p>
-                        <p style=" margin-top: 5px">
+                        <p class="about-content-second-row"> ul. Szwoleżerów 12 </p>
+                        <p class="about-content-second-row"> <i class="fa-solid fa-phone"></i>89 767 21 32, 89 767 34 33 </p>
+                        <p class="about-content-second-row"><i class="fa-solid fa-envelope"></i>
                             <a href="mailto:dzial.techniczny@smwarmia.pl">
                                 dzial.techniczny@smwarmia.pl </a>
                         </p>
-                        <p style="padding-right: 10px; padding-top: 15px"> <strong> <em>
+                        <p style="padding-right: 10px; padding-top: 30px"> <strong> <em>
                                     Telefon dyżurny konserwatora po godzinie 15:00 i w dni wolne od
                                     pracy: </em> 603 349 621 </strong>
                         </p>
                     </div>
                     <div class="about-content-left-wrappertechnicalsupport">
-                        <div class="about-content-left-subtitle" style=" margin-top: 30px"> Telewizja Kablowa </div>
+                        <div class="about-content-left-subtitle" style=" margin-top: 30px"> 
+                        <i class="fa-solid fa-angle-right"></i>Telewizja Kablowa </div>
                         <p style="margin-top: 5px"> Biuro obsługi klienta: </p>
-                        <p> Poniatowskiego 18 </p>
-                        <p> 89 767 20 95 </p>
-                        <p style="margin-top: 10px"> Obsługa techniczna: </p>
-                        <p> ul. Szwoleżerów 12 </p>
-                        <p> 89 767 21 32 </p>
-                        <p> <a href="mailto:tv.kablowa@smwarmia.pl">tv.kablowa@smwarmia.pl</a>
+                        <p class="about-content-second-row"> Poniatowskiego 18 </p>
+                        <p class="about-content-second-row"> <i class="fa-solid fa-phone"></i>89 767 20 95 </p>
+                        <p style="padding-top: 30px"> Obsługa techniczna: </p>
+                        <p class="about-content-second-row"> ul. Szwoleżerów 12 </p>
+                        <p class="about-content-second-row"> <i class="fa-solid fa-phone"></i>89 767 21 32 </p>
+                        <p class="about-content-second-row"> <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:tv.kablowa@smwarmia.pl">tv.kablowa@smwarmia.pl</a>
                         </p>
                     </div>
                     <div class="about-content-left-wrappertechnicalsupport">
                         <div class="about-content-left-subtitle" style=" margin-top: 30px">
-                            Księgowość
+                           <i class="fa-solid fa-angle-right"></i> Księgowość
                         </div>
-                        <p> 89 767 20 95 </p>
-                        <p style=" margin-top: 30px">
-                            <a href="mailto:księgowość@smwarmia.pl">księgowość@smwarmia.pl</a>
+                        <p class="about-content-second-row"> <i class="fa-solid fa-phone"></i>89 767 20 95 </p>
+                        <p class="about-content-second-row">
+                            <a href="mailto:księgowość@smwarmia.pl"><i class="fa-solid fa-envelope"></i>księgowość@smwarmia.pl</a>
                         </p>
                     </div>
                     <div class="about-content-left-wrappertechnicalsupport">
-                        <div class="about-content-left-subtitle"> Działu Członkowsko - Mieszkaniowy </div>
-                        <p style=" margin-top: 30px"> 89 767 06 84 </p>
-                        <p> <a href="mailto:dzialczlonkowski@smwarmia.pl">dzialczlonkowski@smwarmia.pl</a>
+                        <div class="about-content-left-subtitle" style=" margin-top: 30px"> <i class="fa-solid fa-angle-right"></i>Dział Członkowsko - Mieszkaniowy </div>                        
+                        <p class="about-content-second-row"> <i class="fa-solid fa-phone"></i>89 767 06 84 </p>
+                        <p class="about-content-second-row"><i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:dzialczlonkowski@smwarmia.pl">dzialczlonkowski@smwarmia.pl</a>
                         </p>
                     </div>
                 </div>
@@ -129,39 +132,37 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
                     </div>
                     <div class="about-content-right-wrapperCurrentDate">
                         <div class="about-content-right-subtitle">Dziś jest: </div>
-                        <div id="date" class="about-content-right-subtitle"></div>                
+                        <div id="date"></div>                
                     </div>
-                    <div class="about-content-right-wrapperNameDay">
-                        <ul>
-                            <div class="about-content-right-subtitle">Imieniny:</div>
-                         <div id="nameDay" class="about-content-right-subtitle"></div>
-                        </ul>
+                    <div class="about-content-right-wrapperNameDay">                       
+                         <div class="about-content-right-subtitle">Imieniny:</div>
+                         <div id="nameDay" class=""></div>                     
                     </div>
                     <div class="about-content-right-wrapperWeather">
-                        <div class="about-content-right-subtitle">Pogoda: {apiData.name}</div>
+                        <div class="about-content-right-subtitle">Pogoda: <span id="ResName"></span></div>
                         <ul>
                             <li>
-                                <Icon src={icon} alt="Pogoda" />
+                                <div id="Image"></div>
                             </li>
                             <ListItem>
-                                <em>- {description}</em>
+                                <em>- <span id="Description"></span></em>
                             </ListItem>
                             <li style="padding-top: 30px">
-                                <small>Temperatura:</small> {temp} °C
+                                <small>Temperatura:</small> <span id="Temp"></span> °C
                             </li>
                             <li>
-                                <small>Temperatura odczuwalna:</small> {feels_like} °C
+                                <small>Temperatura odczuwalna:</small> <span id="Feels_like"></span> °C
                             </li>
                             <li>
-                                <small>Wilgotność:</small> {humidity} %
+                                <small>Wilgotność:</small> <span id="Humidity"></span> %
                             </li>
                             <li>
-                                <small>Ciśnienie:</small> {pressure} hPa
+                                <small>Ciśnienie:</small> <span id="Pressure"></span> hPa
                             </li>
                             <li>
-                                <small>Prędkość wiatru:</small> {windSpeed} m/s
+                                <small>Prędkość wiatru:</small> <span id="Speed"></span> m/s
                             </li>
-                        </ul>
+                        </ul>                  
                     </div>
                 </div>
             </div>
@@ -356,5 +357,6 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             </div>
         </section>
     </main>
-     <script src="<?php echo get_stylesheet_directory_uri(); ?>./js/script.js" type="text/javascript"></script>
+    <script type='text/javascript' src='<?php echo get_stylesheet_directory_uri(); ?>./config.js'></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>./js/script.js" type="text/javascript"></script>
     <?php get_footer(); ?>

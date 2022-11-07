@@ -11,6 +11,7 @@
 
 document.getElementById('date').innerHTML =  Weekday+" "+Day+" "+MonthLong+" "+Year+"r.";
 
+
 //Name day
 
 const names = [
@@ -392,11 +393,12 @@ const ShowName = NameDay.map((item) => {
 
 document.getElementById("nameDay").innerHTML = ShowName;
 
+
 //Weather
 
-
+const token = config.SECRET_API_KEY;
 const City = "Lidzbark Warmiński";
-const apiKey = "";
+const apiKey = token;
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${City}&lang=pl&appid=${apiKey}`;
 
 
@@ -404,6 +406,7 @@ const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${City}&lang=p
 fetch(apiUrl)
   .then((res) => res.json())
   .then((res) => {
+    const ResName = res.name; 
     const Icon = res.weather[0].icon; 
     const Description = res.weather[0].description;    
     const Temp = Math.round(res.main.temp - 273.15)
@@ -415,7 +418,23 @@ fetch(apiUrl)
      const Speed = res.wind.speed;
      const Humidity = res.main.humidity;
      const Pressure = res.main.pressure; 
+      const ImgSrc = `http://openweathermap.org/img/wn/${Icon}@4x.png`;
+
+document.getElementById("ResName").innerHTML = ResName;
+document.getElementById("Description").innerHTML = Description;
+document.getElementById("Temp").innerHTML = Temp;
+document.getElementById("Feels_like").innerHTML = Feels_like;
+document.getElementById("Speed").innerHTML = Speed;
+document.getElementById("Pressure").innerHTML = Pressure;
+document.getElementById("Humidity").innerHTML = Humidity;   
+
+const image = document.createElement("img");
+image.setAttribute("src", ImgSrc);
+image.setAttribute("alt", "Ikonka pogody");
+document.getElementById("Image").appendChild(image);
+
 
   })
   .catch((error) => console.log("Błąd: ", error));
+
 
