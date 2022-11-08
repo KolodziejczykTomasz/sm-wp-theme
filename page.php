@@ -35,7 +35,7 @@
             </div>
         </div>
     </section> 
-    <section class="brake">Tytuł</section>
+    <section class="brake"><?php the_title(); ?></section>
     <article class="post-single">
         <div class="left"><?php get_sidebar(); ?></div>
         <div class="right"> 
@@ -43,46 +43,33 @@
             <div class="post-wrapper" >
              <div class="post-header">
                  <div class="post-content">
-                     <p>
-                         Do czego tego użyć? </p>
-                       <p>  Ogólnie znana teza głosi, iż użytkownika może
-                     rozpraszać zrozumiała zawartość strony, kiedy ten chce
-                           zobaczyć sam jej wygląd. Jedną z mocnych stron
-                           używania Lorem Ipsum jest to, że ma wiele różnych
-                           „kombinacji” zdań, słów i akapitów, w
-                           przeciwieństwie do zwykłego: „tekst, tekst,
-                           tekst”, sprawiającego, że wygląda to „zbyt czytelnie” po polsku.</p>
-                           <p>Wielu webmasterów i designerów używa Lorem Ipsum
-                                  jako domyślnego modelu tekstu i wpisanie w internetowej wyszukiwarce ‘lorem ipsum’ spowoduje znalezienie bardzo wielu stron, które wciąż są w budowie. Wiele wersji tekstu ewoluowało i zmieniało się przez lata, czasem przez przypadek, czasem specjalnie (humorystyczne wstawki itd).
-                     </p>
+                     <?php the_content(); ?>
                  </div>
                  <div class="post-content-image">
-                     <img src="https://via.placeholder.com" />
+                    <?php
+                        if(has_post_thumbnail()) {
+                        the_post_thumbnail();
+                    } else null
+                    ?>
                  </div>
              </div>
-             <div class="post-gallery">
-                 <div class="post-gallery-title">Galeria</div>
-                 <div class="post-gallery-wrapper">
-                     <img src="https://via.placeholder.com" />
-                     <img src="https://placeholder.com" />
-                     <img src="https://placeholder.com" />
-                     <img src="https://placeholder.com" />
-                     <img src="https://placeholder.com" />
-                     <img src="https://placeholder.com" />
-                     <img src="https://placeholder.com" />
-                     <img src="https://placeholder.com" />
-                     <img src="https://placeholder.com" />
-                     <img src="https://placeholder.com" />
-                     <img src="https://placeholder.com" />
-                     <img src="https://placeholder.com" />
-                </div>
+                <?php 
+                    if ( get_post_gallery() ){  
+                    echo get_post_gallery();
+                } else null
+                ?>
+                <div class='post-gallery'>
+                    <div class='post-gallery-wrapper'>
+                        
+                    </div>
+                </div> 
+                
                 <div class="post-footer">
-                     <div>Autor</div>
-                     <div>Kategoria</div>
-                     <div>Publikacja</div>
-                </div>
+                    <div class="entry-author">Dodał <span><?php the_author(); ?></span></div>
+                    <div class="entry-date">&nbsp;w dniu <span><?php the_time('d-m-Y'); ?></span></div>
+                    <div class="postmetadata">Opublikowano w kategorii <?php the_category(', '); ?></div>
+                </div>            
             </div>
-         </div>
         </div>
     </article>
 </main>

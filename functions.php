@@ -66,6 +66,11 @@ register_sidebar(
         'after_title'   => '</div>',
     )
 );
+//Thumbnail
+add_theme_support('post-thumbnails', array('post', 'page'));
+
+//Gallery
+
 
 //Footer copyright
 function add_this_script_footer() { 
@@ -75,5 +80,6 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 <?php } 
 add_action('wp_footer', 'add_this_script_footer');
-?>
 
+
+?>
