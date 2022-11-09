@@ -117,6 +117,21 @@ body {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+.navbar .menu li::after {
+    content: "|";
+    margin-left: 5px;
+    color: #265D8C;
+}
+.navbar .menu li::after:hover {
+    color: #265D8C;
+    cursor:copy ;
+}
+
+.navbar .menu li:last-child::after{    
+    content: "";
+}
+
 .menu a, .fa-user {
     color:#265D8C;
     transition: 0.3s;
@@ -548,20 +563,29 @@ padding-left: 15px;
     box-shadow: 0 5px 20px -3px rgba(17, 88, 156, 1);
 }
 
-.menuitem-list {
-    list-style-type: disc;
-    margin-left: 30px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+#menu-sm-warmia {  
+   margin-top:10px;
+   padding-left: 30px;
+   flex-direction: column;
 }
 
-.menuitem-list a {
-      color: black;
-      transition: 0.3s;
+#menu-sm-warmia li {    
+      list-style-type: disc;  
+      width: 100%;
  }
 
-.menuitem-list a:hover {
-      color: #8fcb81;
+ #menu-sm-warmia li::marker {    
+      text-align: left;  
+ }
+
+ #menu-sm-warmia a {
+    color: black;
+      text-transform: none;
+      font-weight: 400;
+      transition: 0.3s ease-in-out;
+ }
+
+#menu-sm-warmia a:hover {     
       font-weight: 600;
 }
 

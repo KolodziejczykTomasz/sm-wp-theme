@@ -5,53 +5,28 @@
 add_theme_support( 'custom-logo' );
 
 
-//Menu
+//Menu Main
 
 function reg_mymenu() {
-  register_nav_menu('header-menu',__( 'Menu główne' ));
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Menu główne' ),
+      'extra-menu_1' => __( 'Menu List 1' ),
+      'extra-menu_2' => __( 'Menu List 2' ),
+      'extra-menu_3' => __( 'Menu List 3' ),
+      'extra-menu_4' => __( 'Menu List 4' ),
+      'extra-menu_5' => __( 'Menu List 5' ),
+      'extra-menu_6' => __( 'Menu List 6' ),
+      'extra-menu_7' => __( 'Menu List 7' ),
+      'extra-menu_8' => __( 'Menu List 8' ),
+      'extra-menu_9' => __( 'Menu List 9' ),
+      'extra-menu_10' => __( 'Menu List 10' ),
+      'extra-menu_11' => __( 'Menu List 11' ),
+      'extra-menu_12' => __( 'Menu List 12' )
+    )
+  );
 }
-add_action( 'init', 'reg_mymenu');
-
-
-
-//Navigation
-
-add_filter('nav_menu_css_class', 'nav_css_filter', 10, 1);
-add_filter('nav_menu_item_id', 'nav_css_filter', 10, 1);
-add_filter('page_css_class', 'nav_css_filter', 10, 1);
- 
-function nav_css_filter($classes) {
-   $current = array('current-menu-item', 'current-menu-parent', 'current-menu-ancestor', 'current-page-ancestor');
-   if (is_array($classes)) {
-      $classes = array_intersect($classes, $current);
-   } else {
-      $classes = '';
-   }
-   return $classes;
-}
-
-add_filter('wp_nav_menu_items', 'wcr_wp_nav_menu_items', 11, 2);
-
-function wcr_wp_nav_menu_items($items, $args) {
-	$separator = '&middot;';
-
-	$document = new DOMDocument();
-	$document->loadHTML(mb_convert_encoding($items, 'HTML-ENTITIES', 'UTF-8'));
-
-	$lis = $document->getElementsByTagName('li');
-
-	if (empty($lis)) {
-		return $items;
-	}
-
-	$new_items = array();
-	foreach ($lis as $li) {
-		$new_items[] = $document->saveXML($li);
-	}
-
-	return implode($separator, $new_items);
-}
-
+add_action( 'init', 'reg_mymenu' );
 
 
 //Sidebar
@@ -66,13 +41,15 @@ register_sidebar(
         'after_title'   => '</div>',
     )
 );
-//Thumbnail
-add_theme_support('post-thumbnails', array('post', 'page'));
 
-//Gallery
+
+//Thumbnail
+
+add_theme_support('post-thumbnails', array('post', 'page'));
 
 
 //Footer copyright
+
 function add_this_script_footer() { 
 ?>
 <script>

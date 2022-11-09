@@ -172,81 +172,65 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             <div class="menulist-content">
                 <div class="menuitem-wrapper">
                     <div class="menuitem-subtitle-green">
-                        Władze Spółdzielni
+                        SM Warmia
                     </div>
-                    <ul class="menuitem-list">
-                        <li>
-                            <a href="#">Rada Nadzorcza</a>
-                        </li>
-                        <li>
-                            <a href="#">Zarząd Spółdzielni</a>
-                        </li>
-                    </ul>
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_1' ) ); ?>
                 </div>
-                <div class="menuitem-wrapper">
+               <div class="menuitem-wrapper">
                     <div class="menuitem-subtitle-green">
                         Władze Spółdzielni
                     </div>
-                    <ul class="menuitem-list">
-                        <li>
-                            <a href="#">Rada Nadzorcza</a>
-                        </li>
-                        <li>
-                            <a href="#">Zarząd Spółdzielni</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menuitem-wrapper">
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_2' ) ); ?>
+                </div><div class="menuitem-wrapper">
                     <div class="menuitem-subtitle-green">
-                        Władze Spółdzielni
+                        Mieszkańcy
                     </div>
-                    <ul class="menuitem-list">
-                        <li>
-                            <a href="#">Rada Nadzorcza</a>
-                        </li>
-                        <li>
-                            <a href="#">Zarząd Spółdzielni</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menuitem-wrapper">
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_3' ) ); ?>
+                </div><div class="menuitem-wrapper">
                     <div class="menuitem-subtitle-green">
-                        Władze Spółdzielni
+                        Gospodarka odpadami
                     </div>
-                    <ul class="menuitem-list">
-                        <li>
-                            <a href="#">Rada Nadzorcza</a>
-                        </li>
-                        <li>
-                            <a href="#">Zarząd Spółdzielni</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menuitem-wrapper">
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_4' ) ); ?>
+                </div><div class="menuitem-wrapper">
                     <div class="menuitem-subtitle-green">
-                        Władze Spółdzielni
+                        RPO Warmia i Mazury 2014-2020
                     </div>
-                    <ul class="menuitem-list">
-                        <li>
-                            <a href="#">Rada Nadzorcza</a>
-                        </li>
-                        <li>
-                            <a href="#">Zarząd Spółdzielni</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menuitem-wrapper">
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_5' ) ); ?>
+                </div><div class="menuitem-wrapper">
                     <div class="menuitem-subtitle-green">
-                        Władze Spółdzielni
+                        Informacje
                     </div>
-                    <ul class="menuitem-list">
-                        <li>
-                            <a href="#">Rada Nadzorcza</a>
-                        </li>
-                        <li>
-                            <a href="#">Zarząd Spółdzielni</a>
-                        </li>
-                    </ul>
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_6' ) ); ?>
+                </div><div class="menuitem-wrapper">
+                    <div class="menuitem-subtitle-green">
+                       Lokale do wynajęcia
+                    </div>
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_7' ) ); ?>
+                </div><div class="menuitem-wrapper">
+                    <div class="menuitem-subtitle-green">
+                        Przetargi
+                    </div>
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_8' ) ); ?>
+                </div><div class="menuitem-wrapper">
+                    <div class="menuitem-subtitle-green">
+                        RPO Warmia i Mazury 2007-2013
+                    </div>
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_9' ) ); ?>
+                </div><div class="menuitem-wrapper">
+                    <div class="menuitem-subtitle-green">
+                       Telewizja Kablowa
+                    </div>
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_10' ) ); ?>
+                </div><div class="menuitem-wrapper">
+                    <div class="menuitem-subtitle-green">
+                        Internet
+                    </div>
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_11' ) ); ?>
+                </div><div class="menuitem-wrapper">
+                    <div class="menuitem-subtitle-green">
+                        Ogłoszenia mieszkańców
+                    </div>
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-menu_12' ) ); ?>
                 </div>
             </div>
         </section>
