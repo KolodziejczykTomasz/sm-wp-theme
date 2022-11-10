@@ -47,7 +47,6 @@ register_sidebar(
 
 add_theme_support('post-thumbnails', array('post', 'page'));
 
-
 //Footer copyright
 
 function add_this_script_footer() { 

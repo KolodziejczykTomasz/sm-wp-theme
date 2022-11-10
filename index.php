@@ -237,24 +237,18 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
         <section class="brake">Ogłoszenia</section>
         <section class="noticemain-section">
             <div class="noticemain-content">
+                <?php if(have_posts()) : ?>
+                <?php while(have_posts()) : the_post(); ?> 
                 <div class="noticemainitem-wrapper">
-                    <img src="https://via.placeholder.com/150" alt="alt text" />
+                    <?php
+                    echo get_the_post_thumbnail();
+                    ?>
                 </div>
-                <div class="noticemainitem-wrapper">
-                    <img src="https://via.placeholder.com/150" alt="alt text" />
-                </div>
-                <div class="noticemainitem-wrapper">
-                    <img src="https://via.placeholder.com/150" alt="alt text" />
-                </div>
-                <div class="noticemainitem-wrapper">
-                    <img src="https://via.placeholder.com/150" alt="alt text" />
-                </div>
-                <div class="noticemainitem-wrapper">
-                    <img src="https://via.placeholder.com/150" alt="alt text" />
-                </div>
-                <div class="noticemainitem-wrapper">
-                    <img src="https://via.placeholder.com/150" alt="alt text" />
-                </div>
+                <?php endwhile; ?>
+                <?php endif; ?>  
+            </div>
+            <div class="wrapper-button-more">
+                <a href="#"><button class="button-more">Więcej</button></a>
             </div>
         </section>
         <section class="brake">Nasze Osiedla</section>
