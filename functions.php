@@ -22,7 +22,8 @@ function reg_mymenu() {
       'extra-menu_9' => __( 'Menu List 9' ),
       'extra-menu_10' => __( 'Menu List 10' ),
       'extra-menu_11' => __( 'Menu List 11' ),
-      'extra-menu_12' => __( 'Menu List 12' )
+      'extra-menu_12' => __( 'Menu List 12' ),
+      'sidebar-menu' => __( 'Sidebar' )
     )
   );
 }
@@ -35,7 +36,7 @@ register_sidebar(
     array(
         'name'          => 'Sidebar',
         'id'            => 'sidebar-1',
-         'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<div class="widget__title">',
         'after_title'   => '</div>',

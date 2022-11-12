@@ -1,10 +1,4 @@
-
-<?php get_header();  
-/*
-*Template Name: Szablon strony z sidebar
-*Template Post Type: page
-*/
-?>
+<?php get_header();?>  
 <body>
 <header>
         <nav class="navbar fixed-top  navbar-expand-lg">
@@ -31,48 +25,37 @@
     <section class="hero-section" id="home">
         <div class=" hero-wrapper">
             <div class="hero-wrapperPhoto">
-                <img class="hero-photo" src="./images/hero.jpg" alt="Hero" />
+                <img class="hero-photo" src="<?php echo get_stylesheet_directory_uri(); ?>./images/hero.jpg" alt="Hero" />
             </div>
         </div>
     </section> 
-    <section class="brake"><?php the_title(); ?></section>
+    <section class="brake none-text-transfrom"><?php the_title(); ?></section>
     <article class="post-single">
         <div class="left"><?php get_sidebar(); ?></div>
-        <div class="right"> 
-           
+        <div class="right">           
             <div class="post-wrapper" >
-             <div class="post-header">
-                 <div class="post-content">
-                     <?php the_content(); ?>
-                 </div>
-                 <div class="post-content-image">
-                    <?php
-                        if(has_post_thumbnail()) {
-                        the_post_thumbnail();
-                    } else null
-                    ?>
-                 </div>
-             </div>
-                <?php 
-                    if ( get_post_gallery() ){  
-                    echo get_post_gallery();
-                } else null
-                ?>
-                <div class='post-gallery'>
-                    <div class='post-gallery-wrapper'>
-                        
+                <div class="post-header">
+                    <div class="post-content">
+                        <?php the_content(); ?>
                     </div>
-                </div> 
-                
-                <div class="post-footer">
-                    <div class="entry-author">Dodał <span><?php the_author(); ?></span></div>
-                    <div class="entry-date">&nbsp;w dniu <span><?php the_time('d-m-Y'); ?></span></div>
-                    <div class="postmetadata">Opublikowano w kategorii <?php the_category(', '); ?></div>
+                    <div class="post-content-image">
+                        <?php
+                            if(has_post_thumbnail()) {
+                            the_post_thumbnail();
+                        } else null
+                        ?>
+                    </div>
                 </div>            
+                <div class="post-footer">                    
+                    <div class="postmetadata"><em>Kategoria: <?php the_category(', '); ?></em></div>
+                    <div class="entry-author"></div>
+                    <div class="entry-date"><em>Publikacja: <span class="green-text"><?php the_time('d-m-Y'); ?></span></em></div>                    
+                </div>            
+            </div>
+              <div class="wrapper-button-back">
+                <a href="/"><button class="button-back">Powrót</button></a>
             </div>
         </div>
     </article>
 </main>
-
-
 <?php get_footer(); ?>

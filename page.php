@@ -31,7 +31,7 @@
     <section class="hero-section" id="home">
         <div class=" hero-wrapper">
             <div class="hero-wrapperPhoto">
-                <img class="hero-photo" src="./images/hero.jpg" alt="Hero" />
+                <img class="hero-photo" src="<?php echo get_stylesheet_directory_uri(); ?>./images/hero.jpg" alt="Hero" />
             </div>
         </div>
     </section> 
@@ -40,7 +40,7 @@
         <div class="left"><?php get_sidebar(); ?></div>
         <div class="right"> 
            
-            <div class="post-wrapper" >
+            <div class="page-wrapper" >
              <div class="post-header">
                  <div class="post-content">
                      <?php the_content(); ?>
@@ -57,18 +57,12 @@
                     if ( get_post_gallery() ){  
                     echo get_post_gallery();
                 } else null
-                ?>
-                <div class='post-gallery'>
-                    <div class='post-gallery-wrapper'>
-                        
-                    </div>
-                </div> 
-                
-                <div class="post-footer">
-                    <div class="entry-author">Dodał <span><?php the_author(); ?></span></div>
-                    <div class="entry-date">&nbsp;w dniu <span><?php the_time('d-m-Y'); ?></span></div>
-                    <div class="postmetadata">Opublikowano w kategorii <?php the_category(', '); ?></div>
-                </div>            
+                ?>                          
+                         
+            </div>
+              <div class="wrapper-button-back">
+                <a href="/"><button class="button-back">Powrót</button></a>
+            </div>        
             </div>
         </div>
     </article>

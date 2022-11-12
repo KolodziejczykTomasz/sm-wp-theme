@@ -240,9 +240,9 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
                 <?php if(have_posts()) : ?>
                 <?php while(have_posts()) : the_post(); ?> 
                 <div class="noticemainitem-wrapper">
-                    <?php
-                    echo get_the_post_thumbnail();
-                    ?>
+                    
+                    <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail();  ?></a>
+                  
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>  
