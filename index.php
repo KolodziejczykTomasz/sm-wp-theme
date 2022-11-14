@@ -256,7 +256,7 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             <div class="gallerymain-wrapperItem">
                 <img class="gallerymain-photo" src="<?php echo get_stylesheet_directory_uri(); ?>./images/estate/astronomow.jpg" alt="Osiedle Astronomów" />
                 <div class="gallerymain-photoWrapper">
-                    <a href="">
+                    <a href="/astronomow">
                         <div class="gallerymain-backgroud">
                             <div class="gallerymain-headerItem">Astronomów</div>
                         </div>

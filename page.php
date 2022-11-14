@@ -35,8 +35,8 @@
             </div>
         </div>
     </section> 
-    <section class="brake"><?php the_title(); ?></section>
-    <article class="post-single">
+    <section class="brake none-text-transfrom"><?php the_title(); ?></section>
+    <article class="page-single">
         <div class="left"><?php get_sidebar(); ?></div>
         <div class="right"> 
            

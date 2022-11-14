@@ -59,8 +59,9 @@ body {
      max-width: 1920px;
  }
 
-/*Navbar*/
 
+
+/*Navbar*/
 
 .navbar{   
     min-height: 70px;
@@ -149,6 +150,7 @@ body {
 
 
 /*Hero*/
+
 .hero-section {
     display: block;
     width: 100%;
@@ -176,7 +178,10 @@ body {
     width: 100%;
     height: 100%;
 }
+
+
  /*Brake*/
+
 .brake {
     display: grid;
     min-height: 120px;
@@ -212,7 +217,10 @@ body {
         padding-right: 30px;
     }
 }
+
+
 /*About*/
+
 .about-section{
     width: 100%;
     min-height: 500px;
@@ -240,6 +248,7 @@ body {
 
 
 /*About left*/
+
 .about-content-left-wrapper{
     display: grid;
     font-size: 14px;
@@ -364,6 +373,7 @@ body {
     width: calc(100% - 3px);    
 }
 
+
 /*About center*/
 
 .about-content-center-sections{
@@ -409,6 +419,7 @@ body {
         align-items: center;
     }
 }
+
 .about-content-center-subtitle{
     display: block;
     font-weight: 600;
@@ -520,6 +531,8 @@ body {
     margin: 0 auto;
 }
 
+
+
 /*Menu list*/
 
 .menulist-section {
@@ -544,6 +557,8 @@ body {
         padding: 10px 10px;
     }
 }
+
+
 
 /*Menu Item*/
 
@@ -591,6 +606,10 @@ body {
 #menu-sm-warmia a:hover {     
     font-weight: 600;
 }
+
+
+
+/* Sidebar */
 
 .sidebar .menuitem-wrapper {   
     box-shadow: none; 
@@ -648,6 +667,14 @@ body {
     margin-left: 0;
 }
 
+
+@media (max-width: 762px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+
 /*Notice Front Page*/
 
 .noticemain-section {
@@ -674,9 +701,11 @@ body {
         height: auto;
     }
     .noticemain-content div {
-      box-shadow: 0 5px 15px -10px rgba(0, 0, 0, 0.7);
+        box-shadow: 0 5px 15px -10px rgba(0, 0, 0, 0.7);
   }
 }
+
+
 
 /*Notice Item Front Page*/
 
@@ -729,7 +758,7 @@ body {
     font-weight: 700;
     letter-spacing: 1.5px;
     background-color: transparent;
-     transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .button-more:hover {
@@ -1039,12 +1068,18 @@ footer {
     cursor: pointer;
 }
 
-.post-single {
+.post-single, .page-single {
     width: 100%;
     min-height: 300px;
     margin-bottom: 70px;
     display: grid;
     grid-template-columns: .28fr .72fr;
+}
+
+@media (max-width: 762px) {
+    .page-single {
+        grid-template-columns: 1fr; 
+    }
 }
 
 .post-wrapper, .page-wrapper{
@@ -1116,7 +1151,6 @@ footer {
     font-size:var(--fontSize-xl);
 }
 
-
 .post-gallery-wrapper img {
     display: block;
     width: 400px;
@@ -1139,11 +1173,18 @@ footer {
     padding-left: 2px; 
 }
 
+
+
 /* Page */
 
 .page-wrapper {
     padding: 50px 0;
 }
+
+figure {
+    display:none;
+}
+
 
 
 /* Button Back */
@@ -1238,4 +1279,3 @@ footer {
     text-align: left;
     padding: 0 15px;
 }
-
