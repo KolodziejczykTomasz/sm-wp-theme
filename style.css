@@ -581,30 +581,31 @@ body {
     width: 100%;
 }
 
-#menu-sm-warmia {  
+.menulist-content .menu {  
     margin-top:10px;
     padding-left: 30px;
     flex-direction: column;
 }
 
-#menu-sm-warmia li {    
+.menulist-content .menu li {    
     list-style-type: disc;  
     width: 100%;
  }
 
- #menu-sm-warmia li::marker {    
+ .menulist-content .menu li::marker {    
       text-align: left;  
  }
 
- #menu-sm-warmia a {
+.menulist-content .menu a {
     color: black;
     text-transform: none;
     font-weight: 400;
     transition: 0.3s ease-in-out;
  }
 
-#menu-sm-warmia a:hover {     
+.menulist-content .menu a:hover {     
     font-weight: 600;
+    text-transform: none;
 }
 
 
@@ -1185,6 +1186,13 @@ figure {
     display:none;
 }
 
+.page-single-wide {
+       width: 100%;
+    min-height: 300px;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 
 /* Button Back */
@@ -1278,4 +1286,31 @@ figure {
 .widget_text, .wp-widget-group__inner-blocks{
     text-align: left;
     padding: 0 15px;
+}
+
+/* Table */
+.table thead th {
+    font-size: 22px;
+    padding: 15px 0;
+    font-weight: 600;
+}
+
+.table tbody tr {
+    min-height: 70px;
+    height: auto;
+    padding-right: 20px;
+} 
+
+.fa-download {
+    display: inline-block;
+    font-size: 15px;
+    text-align: right;  
+    width: 60px;
+    height: 100%;  
+    color:#265d8c;
+    transition: 0.3s ease-in-out;
+}
+
+.fa-download:hover {
+    color:#8fcb81;
 }
