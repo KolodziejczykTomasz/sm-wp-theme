@@ -643,7 +643,7 @@ body {
     height: auto;
     font-size:var(--fontSize-xl);
     padding-left: 10px; 
-    transition: 0.1s;
+    transition: .1s;
     border: 2px solid #8fcb81;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -1186,12 +1186,42 @@ figure {
     display:none;
 }
 
+.page-single-wide figure, .wp-block-image {
+    display:block;
+}
+
 .page-single-wide {
-       width: 100%;
+    width: 100%;
     min-height: 300px;
     margin-bottom: 70px;
     display: grid;
     grid-template-columns: 1fr;
+}
+.title-margin-bottom{
+    margin-bottom: 70px;
+}
+
+.alignleft {
+    float:left;
+    margin-right: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
+.alignright {
+    float:right;
+    margin-left: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+ .page-wrapper div:nth-child(3) {     
+    display: none;
+}
+
+.post-header .post-content .gallery {
+display: block;
 }
 
 

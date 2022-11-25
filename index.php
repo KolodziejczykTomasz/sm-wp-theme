@@ -6,7 +6,7 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
     <header>
         <nav class="navbar fixed-top  navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>./images/logo.png" alt="SMWArmia" height="75">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -266,7 +266,7 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             <div class="gallerymain-wrapperItem">
                 <img class="gallerymain-photo" src="<?php echo get_stylesheet_directory_uri(); ?>./images/estate/grabowskiego.jpg" alt="Osiedle Grabowskiego" />
                 <div class="gallerymain-photoWrapper">
-                    <a href="">
+                    <a href="/grabowskiego">
                         <div class="gallerymain-backgroud">
                             <div class="gallerymain-headerItem">Grabowskiego</div>
                         </div>
@@ -276,7 +276,7 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             <div class="gallerymain-wrapperItem">
                 <img class="gallerymain-photo" src="<?php echo get_stylesheet_directory_uri(); ?>./images/estate/kosciuszki.jpg" alt="Osiedle Kościuszki" />
                 <div class="gallerymain-photoWrapper">
-                    <a href="">
+                    <a href="/kosciuszki">
                         <div class="gallerymain-backgroud">
                             <div class="gallerymain-headerItem">Kościuszki</div>
                         </div>
@@ -286,7 +286,7 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             <div class="gallerymain-wrapperItem">
                 <img class="gallerymain-photo" src="<?php echo get_stylesheet_directory_uri(); ?>./images/estate/kromera.jpg" alt="Osiedle Kromera" />
                 <div class="gallerymain-photoWrapper">
-                    <a href="">
+                    <a href="/kromera">
                         <div class="gallerymain-backgroud">
                             <div class="gallerymain-headerItem">Kromera</div>
                         </div>
@@ -296,7 +296,7 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             <div class="gallerymain-wrapperItem">
                 <img class="gallerymain-photo" src="<?php echo get_stylesheet_directory_uri(); ?>./images/estate/legionow.jpg" alt="Osiedle Legionów" />
                 <div class="gallerymain-photoWrapper">
-                    <a href="">
+                    <a href="/legionow">
                         <div class="gallerymain-backgroud">
                             <div class="gallerymain-headerItem">Legionów</div>
                         </div>
@@ -306,7 +306,7 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             <div class="gallerymain-wrapperItem">
                 <img class="gallerymain-photo" src="<?php echo get_stylesheet_directory_uri(); ?>./images/estate/prosta.jpg" alt="Osiedle Prosta" />
                 <div class="gallerymain-photoWrapper">
-                    <a href="">
+                    <a href="/prosta">
                         <div class="gallerymain-backgroud">
                             <div class="gallerymain-headerItem">Prosta</div>
                         </div>
@@ -316,7 +316,7 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             <div class="gallerymain-wrapperItem">
                 <img class="gallerymain-photo" src="<?php echo get_stylesheet_directory_uri(); ?>./images/estate/warminska.jpg" alt="Osiedle Warmińska" />
                 <div class="gallerymain-photoWrapper">
-                    <a href="">
+                    <a href="/warminska">
                         <div class="gallerymain-backgroud">
                             <div class="gallerymain-headerItem">Warmińska</div>
                         </div>
@@ -326,7 +326,7 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             <div class="gallerymain-wrapperItem">
                 <img class="gallerymain-photo" src="<?php echo get_stylesheet_directory_uri(); ?>./images/estate/sloneczna.jpg" alt="Osiedle Słoneczna" />
                 <div class="gallerymain-photoWrapper">
-                    <a href="">
+                    <a href="/sloneczna">
                         <div class="gallerymain-backgroud">
                             <div class="gallerymain-headerItem">Słoneczna</div>
                         </div>
