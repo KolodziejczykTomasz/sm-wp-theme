@@ -239,10 +239,15 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
             <div class="noticemain-content">
                 <?php if(have_posts()) : ?>
                 <?php while(have_posts()) : the_post(); ?> 
-                <div class="noticemainitem-wrapper">
-                    
-                    <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail();  ?></a>
-                  
+              <div class="noticemainitem-wrapper">    
+                    <?php
+                        $args = array( 'post_type' => 'attachment', 'orderby' => 'menu_order', 'order' => 'ASC', 'post_mime_type' => 'image' ,'post_status' => null, 'post_parent' => $post->ID );
+                        $attachments = get_posts($args);
+                            if ($attachments) {
+                            foreach ( $attachments as $attachment ) { ?>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo wp_get_attachment_url( $attachment->ID , false ); ?>" /></a>
+                        <?php   }
+                        } ?>
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>  

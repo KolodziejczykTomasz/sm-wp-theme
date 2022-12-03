@@ -43,10 +43,14 @@ register_sidebar(
     )
 );
 
+//Excerpt
+
+
+// Content
 
 //Thumbnail
 
-add_theme_support('post-thumbnails', array('post', 'page'));
+add_theme_support( 'post-thumbnails' );
 
 //Footer copyright
 

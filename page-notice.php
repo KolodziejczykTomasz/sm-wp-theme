@@ -34,15 +34,14 @@
             </div>
         </div>
     </section> 
-    <section class="brake none-text-transfrom"><?php the_title(); ?></section>
+    <section class="brake none-text-transfrom">Ogłoszenia</section>
     <article class="page-single">
         <div class="left"><?php get_sidebar(); ?></div>
         <div class="right">            
             <div class="page-wrapper" >
                 <div class="page-notice-wrapper">
                     <div class="page-notice-item">
-                        <div>Kategoria: sprzedam</div>
-                        <div>Treść ogłoszenia</div>
+                        
                     </div>
                 </div>            
                 <div class="wrapper-button-back">
