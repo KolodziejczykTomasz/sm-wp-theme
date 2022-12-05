@@ -1110,6 +1110,20 @@ footer {
     
 }
 
+@media (max-width: 762px) {
+    .post-content {
+    padding: 0 20px;
+    
+}
+}
+
+@media (min-width: 763px) {
+    .post-content {
+    padding: 0 120px;
+    
+}
+}
+
 .post-content p {
     padding-bottom: 10px;
 }
@@ -1320,6 +1334,11 @@ display: block;
 }
 
 /* Table */
+
+table {
+    max-width: 100%;
+}
+
 .table thead th {
     font-size: 22px;
     padding: 15px 0;
@@ -1344,4 +1363,114 @@ display: block;
 
 .fa-download:hover {
     color:#8fcb81;
+}
+
+/* Page news */
+
+.page-news-wrapper {  
+    display: grid;  
+    padding: 0 20px;
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    margin: 70px 0;
+    gap: 20px;
+}
+
+
+@media (max-width: 762px) {
+    .page-news-wrapper {
+       grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 763px) {
+    .page-news-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .page-news-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1600px) {
+    .page-news-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.page-news-item {
+    display: grid;    
+    min-height: 400px;
+    height: auto;
+    padding: 20px 20px;
+    cursor: pointer;
+       -webkit-box-shadow: 0px 0px 2px 0 rgba(194, 194, 194, 1);
+    -moz-box-shadow: 0px 0px 2px 0 rgba(194, 194, 194, 1);
+    box-shadow: 0px 0px 2px 0 rgba(194, 194, 194, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.page-news-item:hover {
+    -webkit-box-shadow: 0px 0px 8px 0 rgba(194, 194, 194, 1);
+    -moz-box-shadow: 0px 0px 8px 0 rgba(194, 194, 194, 1);
+    box-shadow: 0px 0px 8px 0 rgba(194, 194, 194, 1);
+}
+
+.page-news-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-news-item-title {
+    font-size: 19px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.page-news-item-thumb img {
+    display: block;
+    width: auto;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+.page-news-item-category {
+    display: flex;   
+    height: 40px;
+    width: 100%;
+    justify-self: left;
+    align-self: flex-end; 
+    align-content: flex-end;
+    margin-top: 15px;
+}    
+
+.page-news-item-category ul {
+    list-style-type: none;
+}
+
+.page-news-item-category-greenText  {
+    padding-left: 7px;
+    color:#8fcb81; 
+}
+
+
+.page-news-pagination{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;  
+    font-size: 20px;  
+}
+
+.pagination {    
+    font-size: 20px;  
+    text-decoration: none;
+    color:rgba(17, 88, 156, 1)
 }

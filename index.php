@@ -253,7 +253,7 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
                 <?php endif; ?>  
             </div>
             <div class="wrapper-button-more">
-                <a href="#"><button class="button-more">Więcej</button></a>
+                <a href="http://127.0.0.1/aktualnosci"><button class="button-more">Więcej</button></a>
             </div>
         </section>
         <section class="brake">Nasze Osiedla</section>
