@@ -1522,3 +1522,11 @@ p label {
     color: white;
     background-color: #8fcb81;
 }
+
+.listing-cat, .rtcl.rtcl-gb-block .rtcl-gb-list-view .listing-item .item-content .rtcl-listing-meta-data .listing-type {
+ display: none !important;
+}
+
+.rtcl-thumbnail {
+    width: 60% !important;
+}
