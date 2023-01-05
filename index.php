@@ -32,6 +32,7 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
                 </div>
             </div>
         </section>
+
         <section class="brake">Spółdzielnia Mieszkaniowa "Warmia" w Lidzbarku Warmińskim</section>
         <section class="about-section">
             <div class="about-content">
@@ -99,32 +100,10 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
                     </div>
                 </div>
                 <div class="about-content-center-sections">
-                    <div class="about-content-center-wrapper">
-                        <div class="about-content-center-header">Zapraszamy</div>
-                        <div class="about-content-center-subtitle">
-                            Spółdzielnia Mieszkaniowa "Warmia"
-                        </div>
-                        <div class="about-content-center-wrapperAddress">
-                            <p>ul. Poniatowskiego 18</p>
-                            <p>11-100 Lidzbark Warmiński</p>
-                            <p>REGON: 000487723 </p>
-                            <p>NIP 743-000-43-23 </p>
-                            <div class="about-content-center-account">
-                                <div style="margin-right: 5px">Nr konta bankowego: </div>
-                                <div> 54 1020 3570 0000 2102 0007 7305</div>
-                            </div>
-                        </div>
-                        <div class="about-content-center-wrapperPhoto">
-                            <img class="about-content-center-photo" src="<?php echo get_stylesheet_directory_uri(); ?>./images/home.jpg" alt="Main Logo" />
-                        </div>
-                        <p style="margin: 30px 0; text-align: center; padding: 0 5px">
-                            <em> <strong>Godziny pracy: poniedziałek - piątek: 7:00 - 15:00</strong> </em>
-                        </p>
-                        <div style="margin: 30px 0; text-align: center; padding: 0 5px">
-                            <em> <strong>Kasa:</strong> </em>
-                            <p>Poniedziałek - Czwartek: 8:00 - 13:00</p>
-                        </div>
-                    </div>
+                   <div class="about-content-center-wrapper">
+
+                             <?php dynamic_sidebar( 'notice_center' ); ?>
+                   </div>
                 </div>
                 <div class="about-content-right-wrapper">
                     <div class="about-content-right-subtitle-green">
@@ -237,20 +216,45 @@ echo wp_get_attachment_image( $logo_id , 'full' );?>
         <section class="brake">Ogłoszenia</section>
         <section class="noticemain-section">
             <div class="noticemain-content">
-                <?php if(have_posts()) : ?>
-                <?php while(have_posts()) : the_post(); ?> 
-              <div class="noticemainitem-wrapper">    
-                    <?php
-                        $args = array( 'post_type' => 'attachment', 'orderby' => 'menu_order', 'order' => 'ASC', 'post_mime_type' => 'image' ,'post_status' => null, 'post_parent' => $post->ID );
-                        $attachments = get_posts($args);
-                            if ($attachments) {
-                            foreach ( $attachments as $attachment ) { ?>
-                            <a href="<?php the_permalink(); ?>"><img src="<?php echo wp_get_attachment_url( $attachment->ID , false ); ?>" /></a>
-                        <?php   }
-                        } ?>
-                </div>
-                <?php endwhile; ?>
-                <?php endif; ?>  
+                  <?php
+                            $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
+
+
+                            $args = array (
+                                'post_type' => the_post(),
+                                'posts_per_page' => '3',
+                                'paged' => $paged,
+                                'category_name' => 'aktualnosci',
+                            );
+                            ?>
+                            <?php
+
+
+                            $cquery = new WP_Query( $args );
+                            while ( $cquery->have_posts() ) : $cquery->the_post();
+                            ?>
+                            <div class="page-news-item">
+                                <a href="<?php the_permalink(); ?>">
+                                    <div class="page-news-item-title"><?php the_title(); ?> </div>
+                                    <div class="page-news-item-thumb"><?php
+                                        $args = array( 'post_type' => 'attachment', 'post_mime_type' => 'image' ,'post_parent' => $post->ID );
+                                        $attachments = get_posts($args);
+                                            if ($attachments) {
+                                            foreach ( $attachments as $attachment ) { ?>
+                                            <img src="<?php echo wp_get_attachment_url( $attachment->ID , true ); ?>" />
+                                            <?php   }
+                                            } ?>
+                                    </div>
+                                    
+                                                    </a>
+                                                </div>
+                                                <?php
+                                                $post->ID;
+                                                endwhile;
+
+                                                $big = 999999999;
+                                                ?>
+                                                  
             </div>
             <div class="wrapper-button-more">
                 <a href="http://127.0.0.1/aktualnosci"><button class="button-more">Więcej</button></a>

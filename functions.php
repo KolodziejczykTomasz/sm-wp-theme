@@ -101,5 +101,20 @@ function custom_pagination($pages = '', $range = 2)
  }
  }
 
-?>
+//Notice widget
+function notice_widgets_init() {
 
+	register_sidebar( array(
+		'name'          => 'Home center notice',
+		'id'            => 'notice_center',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'notice_widgets_init' );
+
+
+?>

@@ -1530,3 +1530,10 @@ p label {
 .rtcl-thumbnail {
     width: 60% !important;
 }
+
+.about-content-center-wrapper article img {
+    height:80%;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
